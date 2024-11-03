@@ -1,0 +1,118 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #35424a;
+    color: #ffffff;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+header h1 .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+#login-toggle {
+    margin-left: auto;
+    padding: 10px 15px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#login-toggle:hover {
+    background-color: #e68900;
+}
+
+/* Login section */
+#login-section {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#login-section h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #35424a;
+}
+
+#login-section input[type="text"],
+#login-section input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#login-button, #logout-button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #35424a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#login-button:hover, #logout-button:hover {
+    background-color: #2b3b43;
+}
+
+/* Queue display */
+#queue {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+#queue h2 {
+    font-size: 22px;
+    color: #35424a;
+}
+
+#queue-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#queue-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+}
+
+#queue-list li:last-child {
+    border-bottom: none;
+}
