@@ -3,31 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thierry Laurent Service Queue</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Thierry Laurent Service</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1><img src="https://i.ibb.co/DMbGMV7/logo.png" alt="Logo" class="logo"> Thierry Laurent Service</h1>
-        <button id="login-toggle">Login</button>
+        <div class="logo">
+            <img src="https://i.ibb.co/Yp5QK6d/logo.png" alt="Logo" width="50">
+            <h1>Thierry Laurent Service</h1>
+        </div>
+        <button id="loginToggle">Login</button>
     </header>
-    
-    <section id="queue">
-        <h2>Current Queue</h2>
-        <ul id="queue-list"></ul>
-    </section>
-
-    <div id="login-section" style="display: none;">
-        <h3>Admin Login</h3>
-        <input type="text" id="username" placeholder="User">
-        <input type="password" id="password" placeholder="Password">
-        <button id="login-button">Login</button>
-        <button id="logout-button" style="display: none;">Logout</button>
-    </div>
-
-    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js"></script>
-    <script src="scripts.js"></script>
+    <main>
+        <h2>Queue</h2>
+        <ul id="queueList"></ul>
+        <form id="addQueueForm">
+            <input type="text" id="queueItem" placeholder="Enter your name" required>
+            <button type="submit">Add to Queue</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 Thierry Laurent Service</p>
+    </footer>
 </body>
 </html>
