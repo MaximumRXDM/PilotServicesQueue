@@ -8,20 +8,21 @@
 </head>
 <body>
     <header>
-        <h1><img src="logo.png" alt="Logo" class="logo"> Thierry Laurent Service</h1>
+        <h1><img src="https://i.ibb.co/DMbGMV7/logo.png" alt="Logo" class="logo"> Thierry Laurent Service</h1>
         <button id="login-toggle">Login</button>
     </header>
+    
     <section id="queue">
         <h2>Current Queue</h2>
         <ul id="queue-list"></ul>
     </section>
 
-    <div id="login-section" style="display:none;">
+    <div id="login-section" style="display: none;">
         <h3>Admin Login</h3>
         <input type="text" id="username" placeholder="User">
         <input type="password" id="password" placeholder="Password">
         <button id="login-button">Login</button>
-        <button id="logout-button" style="display:none;">Logout</button>
+        <button id="logout-button" style="display: none;">Logout</button>
     </div>
 
     <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
